@@ -1,0 +1,23 @@
+{
+  "name": "mikro-orm-modules",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/**/*"
+  ],
+  "devDependencies": {
+    "@monstrs/code-runtime": "^0.1.12",
+    "@types/node": "^18.16.3",
+    "husky": "8.0.3",
+    "typescript": "^5.0.4"
+  },
+  "packageManager": "yarn@3.5.1",
+  "tools": {
+    "schematic": {
+      "collection": "@monstrs/schematics",
+      "schematic": "project",
+      "type": "project",
+      "migration": "1645009327658"
+    }
+  }
+}
