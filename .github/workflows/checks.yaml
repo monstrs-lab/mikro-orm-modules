@@ -1,0 +1,46 @@
+name: Checks
+
+on: [pull_request]
+
+jobs:
+  run:
+    name: Run
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18.11'
+
+      - name: Install
+        run: yarn install
+
+      - name: Lint
+        run: yarn checks lint
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+
+      - name: TypeCheck
+        run: yarn checks typecheck
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+
+      - name: TestUnit
+        run: yarn checks test unit
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+          NODE_OPTIONS: --experimental-vm-modules
+
+      - name: TestIntegration
+        run: yarn checks test integration
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+          NODE_OPTIONS: --experimental-vm-modules
+
+      - name: Release
+        run: yarn checks release
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
