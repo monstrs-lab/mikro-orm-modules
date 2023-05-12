@@ -17,11 +17,12 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
+    "@mikro-orm/postgresql": "*",
     "@monstrs/query-types": "^0.0.2",
     "lodash.isempty": "^4.4.0",
     "lodash.set": "^4.3.2"
   },
-  "devDependencies": {
+  "peerDependencies": {
     "@mikro-orm/postgresql": "*"
   },
   "peerDependenciesMeta": {
