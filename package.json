@@ -6,8 +6,8 @@
     "packages/**/*"
   ],
   "devDependencies": {
-    "@monstrs/code-runtime": "^0.1.12",
-    "@types/node": "^18.16.3",
+    "@monstrs/tools-runtime": "^0.0.5",
+    "@types/node": "^18.16.14",
     "husky": "8.0.3",
     "typescript": "^5.0.4"
   },
