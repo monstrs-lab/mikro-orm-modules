@@ -32,7 +32,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@monstrs/tools-runtime", "npm:0.0.5"],\
-          ["@types/node", "npm:18.16.14"],\
+          ["@types/node", "npm:20.2.3"],\
           ["husky", "npm:8.0.3"],\
           ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
         ],\
@@ -1573,7 +1573,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@monstrs/mikro-orm-query-builder", "workspace:packages/mikro-orm-query-builder"],\
           ["@mikro-orm/postgresql", "virtual:5cfae4529409194069fc52ad28197c4a489dfc8905a39b70ac882ea652bbc44f005f1452bcb87d78ef1688c26c2ae204de93c73859dbbc42a63ceb33c4acc33d#npm:5.7.5"],\
-          ["@monstrs/query-types", "npm:0.0.4"],\
+          ["@monstrs/query-types", "npm:0.0.5"],\
           ["lodash.isempty", "npm:4.4.0"],\
           ["lodash.set", "npm:4.3.2"]\
         ],\
@@ -1581,10 +1581,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@monstrs/query-types", [\
-      ["npm:0.0.4", {\
-        "packageLocation": "./.yarn/cache/@monstrs-query-types-npm-0.0.4-d4ad763b1b-f51f02c970.zip/node_modules/@monstrs/query-types/",\
+      ["npm:0.0.5", {\
+        "packageLocation": "./.yarn/cache/@monstrs-query-types-npm-0.0.5-2545e94f65-6396a5ed63.zip/node_modules/@monstrs/query-types/",\
         "packageDependencies": [\
-          ["@monstrs/query-types", "npm:0.0.4"]\
+          ["@monstrs/query-types", "npm:0.0.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2100,17 +2100,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
-      ["npm:18.16.14", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-18.16.14-163a79fd68-3bfb3f2368.zip/node_modules/@types/node/",\
-        "packageDependencies": [\
-          ["@types/node", "npm:18.16.14"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:20.1.2", {\
         "packageLocation": "./.yarn/cache/@types-node-npm-20.1.2-b07f83bd3a-01c562f1b8.zip/node_modules/@types/node/",\
         "packageDependencies": [\
           ["@types/node", "npm:20.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:20.2.3", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-20.2.3-0289426dd1-c98c23ca2f.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:20.2.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6367,7 +6367,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["mikro-orm-modules", "workspace:."],\
           ["@monstrs/tools-runtime", "npm:0.0.5"],\
-          ["@types/node", "npm:18.16.14"],\
+          ["@types/node", "npm:20.2.3"],\
           ["husky", "npm:8.0.3"],\
           ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
         ],\

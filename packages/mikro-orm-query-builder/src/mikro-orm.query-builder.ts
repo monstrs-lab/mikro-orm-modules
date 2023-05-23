@@ -42,7 +42,7 @@ export class MikroORMQueryBuilder<T extends object> {
     return this
   }
 
-  id(field: string, query?: Query.ID) {
+  id(field: string, query?: Query.IDType) {
     if (field && query?.conditions) {
       const conditions = Object.keys(query.conditions).filter(
         (condition) => !isEmpty(query.conditions![condition])
@@ -71,7 +71,7 @@ export class MikroORMQueryBuilder<T extends object> {
     return this
   }
 
-  date(field: string, query?: Query.Date) {
+  date(field: string, query?: Query.DateType) {
     if (field && query?.conditions) {
       const conditions = Object.keys(query.conditions).filter(
         (condition) => !isEmpty(query.conditions![condition])
