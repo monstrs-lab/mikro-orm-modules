@@ -1,1 +1,1 @@
-/// <reference types="@monstrs/code-runtime/types" />
+/// <reference types="@monstrs/tools-runtime/types" />

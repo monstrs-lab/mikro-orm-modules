@@ -51,7 +51,36 @@ export class MikroORMQueryBuilder<T extends object> {
       if (conditions.length === 1) {
         this.qb.andWhere({
           [field]: {
-            [`$${conditions.at(0)}`]: query.conditions[conditions.at(0)!],
+            [`$${conditions.at(0)!}`]: query.conditions[conditions.at(0)!],
+          },
+        })
+      } else if (conditions.length > 1) {
+        const condition =
+          (query.operator || Query.Operator.AND) === Query.Operator.AND ? '$and' : '$or'
+
+        this.qb.andWhere({
+          [field]: {
+            [condition]: Object.keys(query.conditions).map((key) => ({
+              [`$${key}`]: query.conditions![key],
+            })),
+          },
+        })
+      }
+    }
+
+    return this
+  }
+
+  date(field: string, query?: Query.Date) {
+    if (field && query?.conditions) {
+      const conditions = Object.keys(query.conditions).filter(
+        (condition) => !isEmpty(query.conditions![condition])
+      )
+
+      if (conditions.length === 1) {
+        this.qb.andWhere({
+          [field]: {
+            [`$${conditions.at(0)!}`]: query.conditions[conditions.at(0)!],
           },
         })
       } else if (conditions.length > 1) {
