@@ -1016,7 +1016,7 @@ __metadata:
   resolution: "@monstrs/mikro-orm-query-builder@workspace:packages/mikro-orm-query-builder"
   dependencies:
     "@mikro-orm/postgresql": "npm:*"
-    "@monstrs/query-types": "npm:^0.0.4"
+    "@monstrs/query-types": "npm:^0.0.5"
     lodash.isempty: "npm:^4.4.0"
     lodash.set: "npm:^4.3.2"
   peerDependencies:
@@ -1027,10 +1027,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/query-types@npm:^0.0.4":
-  version: 0.0.4
-  resolution: "@monstrs/query-types@npm:0.0.4"
-  checksum: f51f02c970aa6badb26822d8b498788e3d86c696602d162d8f10f0542c6bc386b0b6c325dbf683eb3bfb3298567eae5f73eedc0916f670207211959f70916772
+"@monstrs/query-types@npm:^0.0.5":
+  version: 0.0.5
+  resolution: "@monstrs/query-types@npm:0.0.5"
+  checksum: 6396a5ed630b462f69f0754e55d8fad4888f5af3325787af15fa469781eae224379020bff80b823d90a030b2c53bebdfe6a3f7720a075b00526cc9a3aa02dcd2
   languageName: node
   linkType: hard
 
@@ -1390,10 +1390,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.16.14":
-  version: 18.16.14
-  resolution: "@types/node@npm:18.16.14"
-  checksum: 3bfb3f236877dd111b635ad1a9793b41daa2bce3540b6ad32a747a9c4a297172fe13dfc495f80b12da66d7fd5f21d665f6098d9e44afebdc08f01e10246c2222
+"@types/node@npm:^20.2.3":
+  version: 20.2.3
+  resolution: "@types/node@npm:20.2.3"
+  checksum: c98c23ca2f2aecf0ff26f368cbecc617b681ad4a5385af6ecb2f2ae4cf421409fe9a3bf243cea4ba7bf30f84b11e51ca432d26ee417aefbed136857506086099
   languageName: node
   linkType: hard
 
@@ -4893,7 +4893,7 @@ __metadata:
   resolution: "mikro-orm-modules@workspace:."
   dependencies:
     "@monstrs/tools-runtime": "npm:^0.0.5"
-    "@types/node": "npm:^18.16.14"
+    "@types/node": "npm:^20.2.3"
     husky: "npm:8.0.3"
     typescript: "npm:^5.0.4"
   languageName: unknown
