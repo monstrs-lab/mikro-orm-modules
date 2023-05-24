@@ -2,24 +2,11 @@ import type { QueryBuilder } from '@mikro-orm/postgresql'
 
 import { Query }             from '@monstrs/query-types'
 import set                   from 'lodash.set'
-import isEmpty               from 'lodash.isempty'
 
 export class MikroORMQueryBuilder<T extends object> {
   #take?: number
 
   constructor(private readonly qb: QueryBuilder<T>) {}
-
-  private isEmptyCondition(condition: unknown): boolean {
-    if (condition === true) {
-      return false
-    }
-
-    if (condition === false) {
-      return false
-    }
-
-    return isEmpty(condition)
-  }
 
   order(order?: Query.Order) {
     if (order) {
@@ -55,25 +42,39 @@ export class MikroORMQueryBuilder<T extends object> {
   }
 
   id(field: string, query?: Query.IDType) {
-    if (field && query?.conditions) {
-      const conditions = Object.keys(query.conditions).filter(
-        (condition) => !this.isEmptyCondition(query.conditions![condition])
-      )
+    if (field && query?.conditions && Object.keys(query.conditions).length > 0) {
+      const queries: { $eq?: string; $in?: Array<string>; $exists?: boolean } = {}
 
-      if (conditions.length === 1) {
+      if (query.conditions.eq) {
+        queries.$eq = query.conditions.eq.value
+      }
+
+      if (query.conditions.in) {
+        queries.$in = query.conditions.in.values
+      }
+
+      if (query.conditions.exists) {
+        queries.$exists = query.conditions.exists.value
+      }
+
+      if (Object.keys(queries).length === 1) {
         this.qb.andWhere({
-          [field]: {
-            [`$${conditions.at(0)!}`]: query.conditions[conditions.at(0)!],
-          },
+          [field]: Object.keys(queries).reduce(
+            (result, key) => ({
+              ...result,
+              [key]: queries[key],
+            }),
+            {}
+          ),
         })
-      } else if (conditions.length > 1) {
-        const condition =
+      } else if (Object.keys(queries).length > 1) {
+        const operator =
           (query.operator || Query.Operator.AND) === Query.Operator.AND ? '$and' : '$or'
 
         this.qb.andWhere({
           [field]: {
-            [condition]: Object.keys(query.conditions).map((key) => ({
-              [`$${key}`]: query.conditions![key],
+            [operator]: Object.keys(queries).map((key) => ({
+              [key]: queries[key],
             })),
           },
         })
@@ -84,25 +85,35 @@ export class MikroORMQueryBuilder<T extends object> {
   }
 
   date(field: string, query?: Query.DateType) {
-    if (field && query?.conditions) {
-      const conditions = Object.keys(query.conditions).filter(
-        (condition) => !this.isEmptyCondition(query.conditions![condition])
-      )
+    if (field && query?.conditions && Object.keys(query.conditions).length > 0) {
+      const queries: { $eq?: Date; $exists?: boolean } = {}
 
-      if (conditions.length === 1) {
+      if (query.conditions.eq) {
+        queries.$eq = query.conditions.eq.value
+      }
+
+      if (query.conditions.exists) {
+        queries.$exists = query.conditions.exists.value
+      }
+
+      if (Object.keys(queries).length === 1) {
         this.qb.andWhere({
-          [field]: {
-            [`$${conditions.at(0)!}`]: query.conditions[conditions.at(0)!],
-          },
+          [field]: Object.keys(queries).reduce(
+            (result, key) => ({
+              ...result,
+              [key]: queries[key],
+            }),
+            {}
+          ),
         })
-      } else if (conditions.length > 1) {
-        const condition =
+      } else if (Object.keys(queries).length > 1) {
+        const operator =
           (query.operator || Query.Operator.AND) === Query.Operator.AND ? '$and' : '$or'
 
         this.qb.andWhere({
           [field]: {
-            [condition]: Object.keys(query.conditions).map((key) => ({
-              [`$${key}`]: query.conditions![key],
+            [operator]: Object.keys(queries).map((key) => ({
+              [key]: queries[key],
             })),
           },
         })
