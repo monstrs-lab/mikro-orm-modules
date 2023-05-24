@@ -9,6 +9,18 @@ export class MikroORMQueryBuilder<T extends object> {
 
   constructor(private readonly qb: QueryBuilder<T>) {}
 
+  private isEmptyCondition(condition: unknown): boolean {
+    if (condition === true) {
+      return false
+    }
+
+    if (condition === false) {
+      return false
+    }
+
+    return isEmpty(condition)
+  }
+
   order(order?: Query.Order) {
     if (order) {
       this.qb.orderBy({
@@ -45,7 +57,7 @@ export class MikroORMQueryBuilder<T extends object> {
   id(field: string, query?: Query.IDType) {
     if (field && query?.conditions) {
       const conditions = Object.keys(query.conditions).filter(
-        (condition) => !isEmpty(query.conditions![condition])
+        (condition) => !this.isEmptyCondition(query.conditions![condition])
       )
 
       if (conditions.length === 1) {
@@ -74,7 +86,7 @@ export class MikroORMQueryBuilder<T extends object> {
   date(field: string, query?: Query.DateType) {
     if (field && query?.conditions) {
       const conditions = Object.keys(query.conditions).filter(
-        (condition) => !isEmpty(query.conditions![condition])
+        (condition) => !this.isEmptyCondition(query.conditions![condition])
       )
 
       if (conditions.length === 1) {
