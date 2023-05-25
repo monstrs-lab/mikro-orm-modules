@@ -14,6 +14,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:."\
     },\
     {\
+      "name": "@monstrs/mikro-orm-logger",\
+      "reference": "workspace:packages/mikro-orm-logger"\
+    },\
+    {\
       "name": "@monstrs/mikro-orm-query-builder",\
       "reference": "workspace:packages/mikro-orm-query-builder"\
     }\
@@ -21,6 +25,7 @@ const RAW_RUNTIME_STATE =
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
+    ["@monstrs/mikro-orm-logger", ["workspace:packages/mikro-orm-logger"]],\
     ["@monstrs/mikro-orm-query-builder", ["workspace:packages/mikro-orm-query-builder"]],\
     ["mikro-orm-modules", ["workspace:."]]\
   ],\
@@ -1331,12 +1336,75 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@mikro-orm/core", [\
+      ["npm:5.7.10", {\
+        "packageLocation": "./.yarn/cache/@mikro-orm-core-npm-5.7.10-363d74e9e3-9b60c3b732.zip/node_modules/@mikro-orm/core/",\
+        "packageDependencies": [\
+          ["@mikro-orm/core", "npm:5.7.10"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
       ["npm:5.7.5", {\
         "packageLocation": "./.yarn/cache/@mikro-orm-core-npm-5.7.5-e66d42e8fa-1ca479d420.zip/node_modules/@mikro-orm/core/",\
         "packageDependencies": [\
           ["@mikro-orm/core", "npm:5.7.5"]\
         ],\
         "linkType": "SOFT"\
+      }],\
+      ["virtual:1e06f026dc8d3cb348767f312ae9491473f9c2300c5793792996e2ce9d1b7e3e24eeb805f8d9db67b2ec98a835496512ca82cd478a518ee43ff082432ab98203#npm:5.7.10", {\
+        "packageLocation": "./.yarn/__virtual__/@mikro-orm-core-virtual-ac73f14192/0/cache/@mikro-orm-core-npm-5.7.10-363d74e9e3-9b60c3b732.zip/node_modules/@mikro-orm/core/",\
+        "packageDependencies": [\
+          ["@mikro-orm/core", "virtual:1e06f026dc8d3cb348767f312ae9491473f9c2300c5793792996e2ce9d1b7e3e24eeb805f8d9db67b2ec98a835496512ca82cd478a518ee43ff082432ab98203#npm:5.7.10"],\
+          ["@mikro-orm/better-sqlite", null],\
+          ["@mikro-orm/entity-generator", null],\
+          ["@mikro-orm/mariadb", null],\
+          ["@mikro-orm/migrations", null],\
+          ["@mikro-orm/migrations-mongodb", null],\
+          ["@mikro-orm/mongodb", null],\
+          ["@mikro-orm/mysql", null],\
+          ["@mikro-orm/postgresql", null],\
+          ["@mikro-orm/seeder", null],\
+          ["@mikro-orm/sqlite", null],\
+          ["@types/mikro-orm__better-sqlite", null],\
+          ["@types/mikro-orm__entity-generator", null],\
+          ["@types/mikro-orm__mariadb", null],\
+          ["@types/mikro-orm__migrations", null],\
+          ["@types/mikro-orm__migrations-mongodb", null],\
+          ["@types/mikro-orm__mongodb", null],\
+          ["@types/mikro-orm__mysql", null],\
+          ["@types/mikro-orm__postgresql", null],\
+          ["@types/mikro-orm__seeder", null],\
+          ["@types/mikro-orm__sqlite", null],\
+          ["acorn-loose", "npm:8.3.0"],\
+          ["acorn-walk", "npm:8.2.0"],\
+          ["dotenv", "npm:16.0.3"],\
+          ["fs-extra", "npm:11.1.1"],\
+          ["globby", "npm:11.1.0"],\
+          ["mikro-orm", "npm:5.7.10"],\
+          ["reflect-metadata", "npm:0.1.13"]\
+        ],\
+        "packagePeers": [\
+          "@mikro-orm/better-sqlite",\
+          "@mikro-orm/entity-generator",\
+          "@mikro-orm/mariadb",\
+          "@mikro-orm/migrations-mongodb",\
+          "@mikro-orm/migrations",\
+          "@mikro-orm/mongodb",\
+          "@mikro-orm/mysql",\
+          "@mikro-orm/postgresql",\
+          "@mikro-orm/seeder",\
+          "@mikro-orm/sqlite",\
+          "@types/mikro-orm__better-sqlite",\
+          "@types/mikro-orm__entity-generator",\
+          "@types/mikro-orm__mariadb",\
+          "@types/mikro-orm__migrations-mongodb",\
+          "@types/mikro-orm__migrations",\
+          "@types/mikro-orm__mongodb",\
+          "@types/mikro-orm__mysql",\
+          "@types/mikro-orm__postgresql",\
+          "@types/mikro-orm__seeder",\
+          "@types/mikro-orm__sqlite"\
+        ],\
+        "linkType": "HARD"\
       }],\
       ["virtual:f421703d41330af747f8b8ae1cbe10cbf9eedeced6be789d163da4c5971845516f15e98fa7cb9187dd7b6bda1f4be1b8ebba5066f38b74d5318025be1af9e425#npm:5.7.5", {\
         "packageLocation": "./.yarn/__virtual__/@mikro-orm-core-virtual-9820873b09/0/cache/@mikro-orm-core-npm-5.7.5-e66d42e8fa-1ca479d420.zip/node_modules/@mikro-orm/core/",\
@@ -1567,6 +1635,34 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@monstrs/logger", [\
+      ["npm:0.0.12", {\
+        "packageLocation": "./.yarn/cache/@monstrs-logger-npm-0.0.12-05eb10b958-975454a996.zip/node_modules/@monstrs/logger/",\
+        "packageDependencies": [\
+          ["@monstrs/logger", "npm:0.0.12"],\
+          ["@opentelemetry/api", "npm:1.4.1"],\
+          ["@opentelemetry/api-logs", "npm:0.38.0"],\
+          ["@opentelemetry/core", "virtual:05eb10b958da82b919bfe50a65014a86a9d1ce966260c35590da6fc721375bc03e2a23ad69047ebf27dd96c87d90de2197c8d919f8375468f19fdbf266b3c4a3#npm:1.13.0"],\
+          ["@opentelemetry/sdk-logs", "virtual:05eb10b958da82b919bfe50a65014a86a9d1ce966260c35590da6fc721375bc03e2a23ad69047ebf27dd96c87d90de2197c8d919f8375468f19fdbf266b3c4a3#npm:0.37.0"],\
+          ["on-exit-leak-free", "npm:2.1.0"],\
+          ["sonic-boom", "npm:3.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@monstrs/mikro-orm-logger", [\
+      ["workspace:packages/mikro-orm-logger", {\
+        "packageLocation": "./packages/mikro-orm-logger/",\
+        "packageDependencies": [\
+          ["@monstrs/mikro-orm-logger", "workspace:packages/mikro-orm-logger"],\
+          ["@jest/globals", "npm:29.5.0"],\
+          ["@mikro-orm/core", "virtual:1e06f026dc8d3cb348767f312ae9491473f9c2300c5793792996e2ce9d1b7e3e24eeb805f8d9db67b2ec98a835496512ca82cd478a518ee43ff082432ab98203#npm:5.7.10"],\
+          ["@monstrs/logger", "npm:0.0.12"],\
+          ["@types/node", "npm:18.16.14"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
     ["@monstrs/mikro-orm-query-builder", [\
       ["workspace:packages/mikro-orm-query-builder", {\
         "packageLocation": "./packages/mikro-orm-query-builder/",\
@@ -1666,6 +1762,109 @@ const RAW_RUNTIME_STATE =
           ["@npmcli/move-file", "npm:2.0.1"],\
           ["mkdirp", "npm:1.0.4"],\
           ["rimraf", "npm:3.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@opentelemetry/api", [\
+      ["npm:1.4.1", {\
+        "packageLocation": "./.yarn/cache/@opentelemetry-api-npm-1.4.1-067620a8fa-e856b2e15a.zip/node_modules/@opentelemetry/api/",\
+        "packageDependencies": [\
+          ["@opentelemetry/api", "npm:1.4.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@opentelemetry/api-logs", [\
+      ["npm:0.38.0", {\
+        "packageLocation": "./.yarn/cache/@opentelemetry-api-logs-npm-0.38.0-972006a90a-0b248abc0b.zip/node_modules/@opentelemetry/api-logs/",\
+        "packageDependencies": [\
+          ["@opentelemetry/api-logs", "npm:0.38.0"],\
+          ["@opentelemetry/api", "npm:1.4.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@opentelemetry/core", [\
+      ["npm:1.13.0", {\
+        "packageLocation": "./.yarn/cache/@opentelemetry-core-npm-1.13.0-fbc9ece5ad-74ab5c843a.zip/node_modules/@opentelemetry/core/",\
+        "packageDependencies": [\
+          ["@opentelemetry/core", "npm:1.13.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:05eb10b958da82b919bfe50a65014a86a9d1ce966260c35590da6fc721375bc03e2a23ad69047ebf27dd96c87d90de2197c8d919f8375468f19fdbf266b3c4a3#npm:1.13.0", {\
+        "packageLocation": "./.yarn/__virtual__/@opentelemetry-core-virtual-196edcce67/0/cache/@opentelemetry-core-npm-1.13.0-fbc9ece5ad-74ab5c843a.zip/node_modules/@opentelemetry/core/",\
+        "packageDependencies": [\
+          ["@opentelemetry/core", "virtual:05eb10b958da82b919bfe50a65014a86a9d1ce966260c35590da6fc721375bc03e2a23ad69047ebf27dd96c87d90de2197c8d919f8375468f19fdbf266b3c4a3#npm:1.13.0"],\
+          ["@opentelemetry/api", "npm:1.4.1"],\
+          ["@opentelemetry/semantic-conventions", "npm:1.13.0"],\
+          ["@types/opentelemetry__api", null]\
+        ],\
+        "packagePeers": [\
+          "@opentelemetry/api",\
+          "@types/opentelemetry__api"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@opentelemetry/resources", [\
+      ["npm:1.13.0", {\
+        "packageLocation": "./.yarn/cache/@opentelemetry-resources-npm-1.13.0-148d4b22aa-2d4bbe2093.zip/node_modules/@opentelemetry/resources/",\
+        "packageDependencies": [\
+          ["@opentelemetry/resources", "npm:1.13.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:c00185161debd2fa2999b0671ba7110911efe98457b84b3168c02cfc4b954c070a683aa57b29b76481d3d622cb4172de7a487e4e8b6a65424deb5f8959c7911a#npm:1.13.0", {\
+        "packageLocation": "./.yarn/__virtual__/@opentelemetry-resources-virtual-6c792aef40/0/cache/@opentelemetry-resources-npm-1.13.0-148d4b22aa-2d4bbe2093.zip/node_modules/@opentelemetry/resources/",\
+        "packageDependencies": [\
+          ["@opentelemetry/resources", "virtual:c00185161debd2fa2999b0671ba7110911efe98457b84b3168c02cfc4b954c070a683aa57b29b76481d3d622cb4172de7a487e4e8b6a65424deb5f8959c7911a#npm:1.13.0"],\
+          ["@opentelemetry/api", "npm:1.4.1"],\
+          ["@opentelemetry/core", "virtual:05eb10b958da82b919bfe50a65014a86a9d1ce966260c35590da6fc721375bc03e2a23ad69047ebf27dd96c87d90de2197c8d919f8375468f19fdbf266b3c4a3#npm:1.13.0"],\
+          ["@opentelemetry/semantic-conventions", "npm:1.13.0"],\
+          ["@types/opentelemetry__api", null]\
+        ],\
+        "packagePeers": [\
+          "@opentelemetry/api",\
+          "@types/opentelemetry__api"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@opentelemetry/sdk-logs", [\
+      ["npm:0.37.0", {\
+        "packageLocation": "./.yarn/cache/@opentelemetry-sdk-logs-npm-0.37.0-7a1aabfa7a-59bd669853.zip/node_modules/@opentelemetry/sdk-logs/",\
+        "packageDependencies": [\
+          ["@opentelemetry/sdk-logs", "npm:0.37.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:05eb10b958da82b919bfe50a65014a86a9d1ce966260c35590da6fc721375bc03e2a23ad69047ebf27dd96c87d90de2197c8d919f8375468f19fdbf266b3c4a3#npm:0.37.0", {\
+        "packageLocation": "./.yarn/__virtual__/@opentelemetry-sdk-logs-virtual-c00185161d/0/cache/@opentelemetry-sdk-logs-npm-0.37.0-7a1aabfa7a-59bd669853.zip/node_modules/@opentelemetry/sdk-logs/",\
+        "packageDependencies": [\
+          ["@opentelemetry/sdk-logs", "virtual:05eb10b958da82b919bfe50a65014a86a9d1ce966260c35590da6fc721375bc03e2a23ad69047ebf27dd96c87d90de2197c8d919f8375468f19fdbf266b3c4a3#npm:0.37.0"],\
+          ["@opentelemetry/api", "npm:1.4.1"],\
+          ["@opentelemetry/api-logs", "npm:0.38.0"],\
+          ["@opentelemetry/core", "virtual:05eb10b958da82b919bfe50a65014a86a9d1ce966260c35590da6fc721375bc03e2a23ad69047ebf27dd96c87d90de2197c8d919f8375468f19fdbf266b3c4a3#npm:1.13.0"],\
+          ["@opentelemetry/resources", "virtual:c00185161debd2fa2999b0671ba7110911efe98457b84b3168c02cfc4b954c070a683aa57b29b76481d3d622cb4172de7a487e4e8b6a65424deb5f8959c7911a#npm:1.13.0"],\
+          ["@types/opentelemetry__api", null],\
+          ["@types/opentelemetry__api-logs", null]\
+        ],\
+        "packagePeers": [\
+          "@opentelemetry/api-logs",\
+          "@opentelemetry/api",\
+          "@types/opentelemetry__api-logs",\
+          "@types/opentelemetry__api"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@opentelemetry/semantic-conventions", [\
+      ["npm:1.13.0", {\
+        "packageLocation": "./.yarn/cache/@opentelemetry-semantic-conventions-npm-1.13.0-acc1d46565-35de7fb8df.zip/node_modules/@opentelemetry/semantic-conventions/",\
+        "packageDependencies": [\
+          ["@opentelemetry/semantic-conventions", "npm:1.13.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2099,6 +2298,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
+      ["npm:18.16.14", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-18.16.14-163a79fd68-3bfb3f2368.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:18.16.14"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:20.1.2", {\
         "packageLocation": "./.yarn/cache/@types-node-npm-20.1.2-b07f83bd3a-01c562f1b8.zip/node_modules/@types/node/",\
         "packageDependencies": [\
@@ -2889,6 +3095,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/ast-types-flow-npm-0.0.7-7d32a3abf5-f6f0fecb7c.zip/node_modules/ast-types-flow/",\
         "packageDependencies": [\
           ["ast-types-flow", "npm:0.0.7"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["atomic-sleep", [\
+      ["npm:1.0.0", {\
+        "packageLocation": "./.yarn/cache/atomic-sleep-npm-1.0.0-17d8a762a3-b9583d8faf.zip/node_modules/atomic-sleep/",\
+        "packageDependencies": [\
+          ["atomic-sleep", "npm:1.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6343,6 +6558,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["mikro-orm", [\
+      ["npm:5.7.10", {\
+        "packageLocation": "./.yarn/cache/mikro-orm-npm-5.7.10-52eb308154-072b2febea.zip/node_modules/mikro-orm/",\
+        "packageDependencies": [\
+          ["mikro-orm", "npm:5.7.10"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:5.7.5", {\
         "packageLocation": "./.yarn/cache/mikro-orm-npm-5.7.5-7dc9413d69-bfe59e0970.zip/node_modules/mikro-orm/",\
         "packageDependencies": [\
@@ -6768,6 +6990,15 @@ const RAW_RUNTIME_STATE =
           ["call-bind", "npm:1.0.2"],\
           ["define-properties", "npm:1.2.0"],\
           ["es-abstract", "npm:1.21.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["on-exit-leak-free", [\
+      ["npm:2.1.0", {\
+        "packageLocation": "./.yarn/cache/on-exit-leak-free-npm-2.1.0-b522202aa1-b564f515f0.zip/node_modules/on-exit-leak-free/",\
+        "packageDependencies": [\
+          ["on-exit-leak-free", "npm:2.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7584,6 +7815,16 @@ const RAW_RUNTIME_STATE =
           ["agent-base", "npm:6.0.2"],\
           ["debug", "virtual:ac3d8e680759ce54399273724d44e041d6c9b73454d191d411a8c44bb27e22f02aaf6ed9d3ad0ac1c298eac4833cff369c9c7b84c573016112c4f84be2cd8543#npm:4.3.4"],\
           ["socks", "npm:2.7.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["sonic-boom", [\
+      ["npm:3.3.0", {\
+        "packageLocation": "./.yarn/cache/sonic-boom-npm-3.3.0-6a662502aa-f3e550782d.zip/node_modules/sonic-boom/",\
+        "packageDependencies": [\
+          ["sonic-boom", "npm:3.3.0"],\
+          ["atomic-sleep", "npm:1.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
