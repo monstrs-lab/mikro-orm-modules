@@ -887,6 +887,53 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mikro-orm/core@npm:^5.6.1":
+  version: 5.7.10
+  resolution: "@mikro-orm/core@npm:5.7.10"
+  dependencies:
+    acorn-loose: "npm:8.3.0"
+    acorn-walk: "npm:8.2.0"
+    dotenv: "npm:16.0.3"
+    fs-extra: "npm:11.1.1"
+    globby: "npm:11.1.0"
+    mikro-orm: "npm:~5.7.10"
+    reflect-metadata: "npm:0.1.13"
+  peerDependencies:
+    "@mikro-orm/better-sqlite": ^5.0.0
+    "@mikro-orm/entity-generator": ^5.0.0
+    "@mikro-orm/mariadb": ^5.0.0
+    "@mikro-orm/migrations": ^5.0.0
+    "@mikro-orm/migrations-mongodb": ^5.0.0
+    "@mikro-orm/mongodb": ^5.0.0
+    "@mikro-orm/mysql": ^5.0.0
+    "@mikro-orm/postgresql": ^5.0.0
+    "@mikro-orm/seeder": ^5.0.0
+    "@mikro-orm/sqlite": ^5.0.0
+  peerDependenciesMeta:
+    "@mikro-orm/better-sqlite":
+      optional: true
+    "@mikro-orm/entity-generator":
+      optional: true
+    "@mikro-orm/mariadb":
+      optional: true
+    "@mikro-orm/migrations":
+      optional: true
+    "@mikro-orm/migrations-mongodb":
+      optional: true
+    "@mikro-orm/mongodb":
+      optional: true
+    "@mikro-orm/mysql":
+      optional: true
+    "@mikro-orm/postgresql":
+      optional: true
+    "@mikro-orm/seeder":
+      optional: true
+    "@mikro-orm/sqlite":
+      optional: true
+  checksum: 9b60c3b732fd43cacdb99ce630ecb7ae8f9be52fa6d3df7ea3651ed8f27ced788b1c328a4c856d18da96a76cf4d3f4d4d42f5ab77c185df8fc1537b1076ebc05
+  languageName: node
+  linkType: hard
+
 "@mikro-orm/knex@npm:~5.7.5":
   version: 5.7.5
   resolution: "@mikro-orm/knex@npm:5.7.5"
@@ -1011,6 +1058,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@monstrs/logger@npm:^0.0.12":
+  version: 0.0.12
+  resolution: "@monstrs/logger@npm:0.0.12"
+  dependencies:
+    "@opentelemetry/api": "npm:*"
+    "@opentelemetry/api-logs": "npm:^0.38.0"
+    "@opentelemetry/core": "npm:*"
+    "@opentelemetry/sdk-logs": "npm:^0.37.0"
+    on-exit-leak-free: "npm:^2.1.0"
+    sonic-boom: "npm:^3.3.0"
+  checksum: 975454a996ddf5e755440dd6dd7ab89dbd00cc66197d453253f887a7ae8739aab6854e29a99f29fd4781892c0bbc15a91f70f20b76d651438182b7b201271766
+  languageName: node
+  linkType: hard
+
+"@monstrs/mikro-orm-logger@workspace:packages/mikro-orm-logger":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/mikro-orm-logger@workspace:packages/mikro-orm-logger"
+  dependencies:
+    "@jest/globals": "npm:^29.5.0"
+    "@mikro-orm/core": "npm:^5.6.1"
+    "@monstrs/logger": "npm:^0.0.12"
+    "@types/node": "npm:^18.16.1"
+  peerDependencies:
+    "@mikro-orm/core": ^5
+  languageName: unknown
+  linkType: soft
+
 "@monstrs/mikro-orm-query-builder@workspace:packages/mikro-orm-query-builder":
   version: 0.0.0-use.local
   resolution: "@monstrs/mikro-orm-query-builder@workspace:packages/mikro-orm-query-builder"
@@ -1104,6 +1178,65 @@ __metadata:
     mkdirp: "npm:^1.0.4"
     rimraf: "npm:^3.0.2"
   checksum: 3557a12cd18dfb5bcd5d5cf910b783832af50ffba28fd5bb510c3c56b2df0481558b9ec6d3008e8eeefb9f2944bdc1d34832b1a8bbf6ad1cd2f256bf12c84ff0
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/api-logs@npm:^0.38.0":
+  version: 0.38.0
+  resolution: "@opentelemetry/api-logs@npm:0.38.0"
+  dependencies:
+    "@opentelemetry/api": "npm:^1.0.0"
+  checksum: 0b248abc0bc44d66d43ddcff5549f7715a9cd7c366416f159d891e303ba85277805cc9ce5cda76e57926b2a611177b4e922debfd296597962f7fdbfdea3aaf14
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/api@npm:*, @opentelemetry/api@npm:^1.0.0":
+  version: 1.4.1
+  resolution: "@opentelemetry/api@npm:1.4.1"
+  checksum: e856b2e15abb595964acffc3d0f966d42bc07b5e93850200b46a03b896fe319c98137b91b29d93d582b2d454352640edee1022e9a468b7f9b20aef9adc1d63ac
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/core@npm:*, @opentelemetry/core@npm:1.13.0, @opentelemetry/core@npm:^1.11.0":
+  version: 1.13.0
+  resolution: "@opentelemetry/core@npm:1.13.0"
+  dependencies:
+    "@opentelemetry/semantic-conventions": "npm:1.13.0"
+  peerDependencies:
+    "@opentelemetry/api": ">=1.0.0 <1.5.0"
+  checksum: 74ab5c843aabb54a6ed336f883217b51cb30431b2b071813003a69efb70373779a4c41fa91632fce04b254e0e20fe733259f6fccbdd3a764de8a4a4ffa66535a
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/resources@npm:^1.11.0":
+  version: 1.13.0
+  resolution: "@opentelemetry/resources@npm:1.13.0"
+  dependencies:
+    "@opentelemetry/core": "npm:1.13.0"
+    "@opentelemetry/semantic-conventions": "npm:1.13.0"
+  peerDependencies:
+    "@opentelemetry/api": ">=1.0.0 <1.5.0"
+  checksum: 2d4bbe2093ad9181954d89e0b529c1c354c81802652bd9e823fc51ade6f66da37571d3630f3af0f18636f2265ac575a30ac5a4d32881aa14c1525322569547bc
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/sdk-logs@npm:^0.37.0":
+  version: 0.37.0
+  resolution: "@opentelemetry/sdk-logs@npm:0.37.0"
+  dependencies:
+    "@opentelemetry/core": "npm:^1.11.0"
+    "@opentelemetry/resources": "npm:^1.11.0"
+  peerDependencies:
+    "@opentelemetry/api": ">=1.4.0 <1.5.0"
+    "@opentelemetry/api-logs": ">=0.37.0"
+  checksum: 59bd669853ec38c1354358382c89e55ca7c629f2ad2f29b84c636745f483cbfe5914a7a5df4482029ea305331d859dc306941511712a3a1dc72bab6fda699d11
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/semantic-conventions@npm:1.13.0":
+  version: 1.13.0
+  resolution: "@opentelemetry/semantic-conventions@npm:1.13.0"
+  checksum: 35de7fb8df403e45d70753dfa58afe99604d864c9c87b05e134f5df5dde362ac19b18832efe94f4439f61c0fdc2369c87ec1d661a65baea69973c94273eb04df
   languageName: node
   linkType: hard
 
@@ -1386,6 +1519,13 @@ __metadata:
   version: 20.1.2
   resolution: "@types/node@npm:20.1.2"
   checksum: 01c562f1b84810f9aa780afee5024ffd9cd021d5fe4cad09b753a81408d028e39a21aff8a99c4fb3683e07ae1141973645284ef7d567a3a2fcfc74d5a952969a
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.16.1":
+  version: 18.16.14
+  resolution: "@types/node@npm:18.16.14"
+  checksum: 3bfb3f236877dd111b635ad1a9793b41daa2bce3540b6ad32a747a9c4a297172fe13dfc495f80b12da66d7fd5f21d665f6098d9e44afebdc08f01e10246c2222
   languageName: node
   linkType: hard
 
@@ -1984,6 +2124,13 @@ __metadata:
   version: 0.0.7
   resolution: "ast-types-flow@npm:0.0.7"
   checksum: f6f0fecb7cd2a31b964582e4a98c494e388041a6925e01e1a2d67a4c450e345d7dbd4ca9e6aaee493018ed03ecf23ce4456e4077b1a52c5c8eae35beb71111ae
+  languageName: node
+  linkType: hard
+
+"atomic-sleep@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "atomic-sleep@npm:1.0.0"
+  checksum: b9583d8fafe683ebdd7e516e1e9efc220d2b457dc1ae7e2175d32322f6a355d0d9dbb7eb397e104fca1f4cb9064474ea1697fd2f71d394df07508675a9f7686b
   languageName: node
   linkType: hard
 
@@ -4891,6 +5038,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"mikro-orm@npm:~5.7.10":
+  version: 5.7.10
+  resolution: "mikro-orm@npm:5.7.10"
+  checksum: 072b2febea35e58e394747f7b2aa582e1bb4938db479d51c1cee58397c96ae793a6049cb58fff762c22c829dec20bd0a59cae4e7322495818f0f56890cea1bc7
+  languageName: node
+  linkType: hard
+
 "mikro-orm@npm:~5.7.5":
   version: 5.7.5
   resolution: "mikro-orm@npm:5.7.5"
@@ -5251,6 +5405,13 @@ __metadata:
     define-properties: "npm:^1.1.4"
     es-abstract: "npm:^1.20.4"
   checksum: 34c61f5568744aefcf59f676fdf2444eff72f84b5006f5fc8eedb9ed8e5094222516807fbebd7b59c143a54476682676645bd5444b2ecaebe1e46322d754c4a7
+  languageName: node
+  linkType: hard
+
+"on-exit-leak-free@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "on-exit-leak-free@npm:2.1.0"
+  checksum: b564f515f00c591ad7fa2afeabf57dd1ab9f27c0b9e5a523ed206dc3e2404f615516d7575cb187ade0cebd8409ce00c2046ad6755c6ad42f892d222bb1cc9fbe
   languageName: node
   linkType: hard
 
@@ -5966,6 +6127,15 @@ __metadata:
     ip: "npm:^2.0.0"
     smart-buffer: "npm:^4.2.0"
   checksum: a8026d6abfcd168a661240848f6989fbba66276e8fa97ff1cb1079c2f3c6907dcc8284fcbc4f6d3fee8d071afb4fc8313da7e5fbf6d8768f206347a671f1542b
+  languageName: node
+  linkType: hard
+
+"sonic-boom@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "sonic-boom@npm:3.3.0"
+  dependencies:
+    atomic-sleep: "npm:^1.0.0"
+  checksum: f3e550782df586268369d27bdadee7d7eb98051d0c0d49d43cceb1187a4409a1a1079443b13536e11f2369733ab5fa958cf7f019112367c5d258d7de7be825f3
   languageName: node
   linkType: hard
 
