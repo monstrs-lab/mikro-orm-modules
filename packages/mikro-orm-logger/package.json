@@ -1,0 +1,43 @@
+{
+  "name": "@monstrs/mikro-orm-logger",
+  "version": "0.0.7",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./src/index.ts"
+  },
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn library build",
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
+  },
+  "dependencies": {
+    "@monstrs/logger": "^0.0.12"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.5.0",
+    "@mikro-orm/core": "^5.6.1",
+    "@types/node": "^18.16.1"
+  },
+  "peerDependencies": {
+    "@mikro-orm/core": "^5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      "./package.json": "./package.json",
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
+  }
+}
