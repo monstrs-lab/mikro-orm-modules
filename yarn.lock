@@ -1058,9 +1058,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/logger@npm:^0.0.15":
-  version: 0.0.15
-  resolution: "@monstrs/logger@npm:0.0.15"
+"@monstrs/logger@npm:^0.0.16":
+  version: 0.0.16
+  resolution: "@monstrs/logger@npm:0.0.16"
   dependencies:
     "@opentelemetry/api": "npm:*"
     "@opentelemetry/api-logs": "npm:^0.38.0"
@@ -1068,7 +1068,7 @@ __metadata:
     "@opentelemetry/sdk-logs": "npm:^0.37.0"
     on-exit-leak-free: "npm:^2.1.0"
     sonic-boom: "npm:^3.3.0"
-  checksum: 322a6e167c0b4485c7c81b1971a338fb6c7462c9ef073d25ae11eb15badb73c14b8b86b7e567f7eff31fda51287304a3503b90a5182f73c67a7357adc412a09d
+  checksum: 269e19bde351687591c21d20f075372990d80a9224de62563392a8e9d288447c30b48716768a840c7f46d721d394a7d30be91eac09ff2afbeb3e17f83a85c464
   languageName: node
   linkType: hard
 
@@ -1078,8 +1078,8 @@ __metadata:
   dependencies:
     "@jest/globals": "npm:^29.5.0"
     "@mikro-orm/core": "npm:^5.6.1"
-    "@monstrs/logger": "npm:^0.0.15"
-    "@types/node": "npm:^20.2.3"
+    "@monstrs/logger": "npm:^0.0.16"
+    "@types/node": "npm:^20.2.4"
   peerDependencies:
     "@mikro-orm/core": ^5
   languageName: unknown
@@ -1522,10 +1522,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.2.3":
-  version: 20.2.3
-  resolution: "@types/node@npm:20.2.3"
-  checksum: c98c23ca2f2aecf0ff26f368cbecc617b681ad4a5385af6ecb2f2ae4cf421409fe9a3bf243cea4ba7bf30f84b11e51ca432d26ee417aefbed136857506086099
+"@types/node@npm:^20.2.4":
+  version: 20.2.4
+  resolution: "@types/node@npm:20.2.4"
+  checksum: 9b2e7c04e11453c87ba17871833529b3a29c312074fa2164e8b74bef1ac01ee3f083603b61aabcd7aef1c4f7d94f90846f22e59319d70e175443961c2fd25646
   languageName: node
   linkType: hard
 
@@ -5025,7 +5025,7 @@ __metadata:
   resolution: "mikro-orm-modules@workspace:."
   dependencies:
     "@monstrs/tools-runtime": "npm:^0.0.5"
-    "@types/node": "npm:^20.2.3"
+    "@types/node": "npm:^20.2.4"
     husky: "npm:8.0.3"
     typescript: "npm:^5.0.4"
   languageName: unknown
