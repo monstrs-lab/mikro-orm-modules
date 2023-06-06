@@ -8,7 +8,7 @@ export class MikroORMQueryBuilder<T extends object> {
 
   constructor(private readonly qb: QueryBuilder<T>) {}
 
-  order(order?: Query.Order) {
+  order(order?: Query.Order): MikroORMQueryBuilder<T> {
     if (order) {
       this.qb.orderBy({
         [order.field]: order.direction === Query.OrderDirection.ASC ? 'ASC' : 'DESC',
@@ -18,7 +18,7 @@ export class MikroORMQueryBuilder<T extends object> {
     return this
   }
 
-  pager(pager?: Query.Pager) {
+  pager(pager?: Query.Pager): MikroORMQueryBuilder<T> {
     if (pager?.take) {
       this.#take = pager.take + 1
 
@@ -28,7 +28,7 @@ export class MikroORMQueryBuilder<T extends object> {
     return this
   }
 
-  search(fields?: Array<Query.SearchField>, value?: string) {
+  search(fields?: Array<Query.SearchField>, value?: string): MikroORMQueryBuilder<T> {
     if (value && fields && fields.length > 0) {
       this.qb.andWhere({
         $or: fields.map((field) =>
@@ -41,7 +41,7 @@ export class MikroORMQueryBuilder<T extends object> {
     return this
   }
 
-  id(field: string, query?: Query.IDType) {
+  id(field: string, query?: Query.IDType): MikroORMQueryBuilder<T> {
     if (field && query?.conditions && Object.keys(query.conditions).length > 0) {
       const queries: { $eq?: string; $in?: Array<string>; $exists?: boolean } = {}
 
@@ -84,7 +84,7 @@ export class MikroORMQueryBuilder<T extends object> {
     return this
   }
 
-  date(field: string, query?: Query.DateType) {
+  date(field: string, query?: Query.DateType): MikroORMQueryBuilder<T> {
     if (field && query?.conditions && Object.keys(query.conditions).length > 0) {
       const queries: { $eq?: Date; $exists?: boolean } = {}
 
