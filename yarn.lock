@@ -1096,6 +1096,7 @@ __metadata:
   dependencies:
     "@mikro-orm/postgresql": "npm:*"
     "@monstrs/query-types": "npm:^0.0.7"
+    "@types/lodash.set": "npm:^4.3.7"
     lodash.set: "npm:^4.3.2"
   peerDependencies:
     "@mikro-orm/postgresql": "*"
@@ -1517,6 +1518,22 @@ __metadata:
   version: 0.0.29
   resolution: "@types/json5@npm:0.0.29"
   checksum: 4f7f0667d7573ce2888e01e5e887c9661bb2a7e7fd79aae3c57391e812e87cc2fadc4dc1616530f33e63798a011fabe816f41730b511050aba702688466765fd
+  languageName: node
+  linkType: hard
+
+"@types/lodash.set@npm:^4.3.7":
+  version: 4.3.7
+  resolution: "@types/lodash.set@npm:4.3.7"
+  dependencies:
+    "@types/lodash": "npm:*"
+  checksum: 06aa3d7c10d85d15ddb381a09e695aef62f0eccec3021ae5e9ded50e1b64d5adc0eedcb2da913527442b2f6c12eca5ac82efff52091a489ac2234681b7915c8c
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:*":
+  version: 4.14.195
+  resolution: "@types/lodash@npm:4.14.195"
+  checksum: a503fc2cef87abc17ec6f388009a787e609b799b8fcb69c47f9b91d5a47e564b5c00fd121f691acf2b2bb43b788e28ca22781de1ac561b2c35bea380c6446f79
   languageName: node
   linkType: hard
 
