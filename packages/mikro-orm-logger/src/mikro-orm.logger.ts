@@ -13,9 +13,9 @@ import { LOGGER_CONNECTION_NAME_ATTRIBUTE_NAME } from './mikro-orm.logger.consta
 import { LOGGER_TOOK_ATTRIBUTE_NAME }            from './mikro-orm.logger.constants.js'
 
 export class MikroORMLogger implements ILogger {
-  #logger: Logger = new Logger('mikro-orm')
-
   public debugMode = this.options.debugMode ?? false
+
+  #logger: Logger = new Logger('mikro-orm')
 
   constructor(private readonly options: LoggerOptions) {}
 
