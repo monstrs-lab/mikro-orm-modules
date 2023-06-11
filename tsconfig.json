@@ -15,6 +15,9 @@
       "esnext",
       "dom",
       "dom.iterable",
+      "esnext",
+      "dom",
+      "dom.iterable",
       "esnext"
     ],
     "declaration": false,
