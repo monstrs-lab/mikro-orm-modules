@@ -21,6 +21,9 @@
     "@monstrs/query-types": "^0.0.7",
     "lodash.set": "^4.3.2"
   },
+  "devDependencies": {
+    "@types/lodash.set": "^4.3.7"
+  },
   "peerDependencies": {
     "@mikro-orm/postgresql": "*"
   },
