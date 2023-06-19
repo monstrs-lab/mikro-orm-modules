@@ -994,9 +994,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/config-eslint@npm:0.3.7":
-  version: 0.3.7
-  resolution: "@monstrs/config-eslint@npm:0.3.7"
+"@monstrs/config-eslint@npm:0.3.8":
+  version: 0.3.8
+  resolution: "@monstrs/config-eslint@npm:0.3.8"
   dependencies:
     "@monstrs/config-prettier": "npm:0.4.2"
     "@next/eslint-plugin-next": "npm:^13.4.4"
@@ -1016,7 +1016,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 63ebd4521a70e6ddc636fb4bac3e1378e2a67e0524bc9f17f0fd0d2df39479cde6752e29aaefcd3931fa51ba36169aa45fa21dfd53e0b6f4bbc462be21ab2a4f
+  checksum: f30dea75bc6d1ef08dc8e9fd38f25969cf967e90d7a32e80db55ea711dc5cbc49ee1d402cc4a76fe41dce7ce595191b75d28676b56c7edd6f760e4233f5c5104
   languageName: node
   linkType: hard
 
@@ -1113,12 +1113,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/tools-runtime@npm:^0.2.7":
-  version: 0.2.7
-  resolution: "@monstrs/tools-runtime@npm:0.2.7"
+"@monstrs/tools-runtime@npm:^0.2.8":
+  version: 0.2.8
+  resolution: "@monstrs/tools-runtime@npm:0.2.8"
   dependencies:
     "@jest/core": "npm:^29.5.0"
-    "@monstrs/config-eslint": "npm:0.3.7"
+    "@monstrs/config-eslint": "npm:0.3.8"
     "@monstrs/config-jest": "npm:0.3.4"
     "@svgr/core": "npm:^8.0.0"
     "@svgr/plugin-jsx": "npm:^8.0.1"
@@ -1127,7 +1127,7 @@ __metadata:
     ts-loader: "npm:^9.4.3"
     typescript: "npm:^5.1.3"
     webpack: "npm:^5.85.0"
-  checksum: a5f87995aad7a15ba7516b1dc761f564490610bc96aa38b9d6c433c4d500d7ff5bcca57fac3745c9828a95a3175e42e33263e1be548d5509a435b7818bf868a0
+  checksum: faca3cdb7c0aa45609c5091817f667420520d8b366af151a22a0bc2785870b5b229e0cab32661d871bdcbaac33e5adcb2bf93cbe5b05c607b71b7d7ae7aa6034
   languageName: node
   linkType: hard
 
@@ -5055,7 +5055,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mikro-orm-modules@workspace:."
   dependencies:
-    "@monstrs/tools-runtime": "npm:^0.2.7"
+    "@monstrs/tools-runtime": "npm:^0.2.8"
     "@types/node": "npm:^20.2.5"
     husky: "npm:8.0.3"
     typescript: "npm:^5.1.3"
