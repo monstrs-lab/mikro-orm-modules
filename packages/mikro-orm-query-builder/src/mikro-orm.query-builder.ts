@@ -62,7 +62,7 @@ export class MikroORMQueryBuilder<T extends object> {
           [field]: Object.keys(queries).reduce(
             (result, key) => ({
               ...result,
-              [key]: queries[key],
+              [key]: queries[key as keyof typeof queries],
             }),
             {}
           ),
@@ -74,7 +74,7 @@ export class MikroORMQueryBuilder<T extends object> {
         this.qb.andWhere({
           [field]: {
             [operator]: Object.keys(queries).map((key) => ({
-              [key]: queries[key],
+              [key]: queries[key as keyof typeof queries],
             })),
           },
         })
@@ -101,7 +101,7 @@ export class MikroORMQueryBuilder<T extends object> {
           [field]: Object.keys(queries).reduce(
             (result, key) => ({
               ...result,
-              [key]: queries[key],
+              [key]: queries[key as keyof typeof queries],
             }),
             {}
           ),
@@ -113,7 +113,7 @@ export class MikroORMQueryBuilder<T extends object> {
         this.qb.andWhere({
           [field]: {
             [operator]: Object.keys(queries).map((key) => ({
-              [key]: queries[key],
+              [key]: queries[key as keyof typeof queries],
             })),
           },
         })
@@ -144,7 +144,7 @@ export class MikroORMQueryBuilder<T extends object> {
           [field]: Object.keys(queries).reduce(
             (result, key) => ({
               ...result,
-              [key]: queries[key],
+              [key]: queries[key as keyof typeof queries],
             }),
             {}
           ),
@@ -156,7 +156,7 @@ export class MikroORMQueryBuilder<T extends object> {
         this.qb.andWhere({
           [field]: {
             [operator]: Object.keys(queries).map((key) => ({
-              [key]: queries[key],
+              [key]: queries[key as keyof typeof queries],
             })),
           },
         })
