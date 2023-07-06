@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '19.9'
+          node-version: '20'
 
       - name: Install
         run: yarn install
