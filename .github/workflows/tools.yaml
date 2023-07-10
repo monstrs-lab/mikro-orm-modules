@@ -9,36 +9,9 @@ on:
         required: true
 
 jobs:
-  update:
-    name: Update Tools
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          ref: master
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-
-      - name: Install
-        run: yarn install
-
-      - name: Update
-        run: yarn set version https://www.unpkg.com/@monstrs/yarn-cli@${{ inputs.version }}/dist/yarn.cjs
-        env:
-          YARN_ENABLE_IMMUTABLE_INSTALLS: false
-
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
-        with:
-          token: ${{ secrets.PAT_TOKEN }}
-          commit-message: 'feat: update tools'
-          title: 'feat: update tools'
-          branch-suffix: random
-          delete-branch: true
-          body: |
-            Update tools to ${{ inputs.version }}.
+  publish:
+    uses: monstrs-lab/shared/.github/workflows/tools.yaml@master
+    with:
+      version: ${{ inputs.version }}
+    secrets:
+      patToken: ${{ secrets.PAT_TOKEN }}
