@@ -6,12 +6,12 @@
     "packages/**/*"
   ],
   "devDependencies": {
-    "@monstrs/tools-runtime": "^0.2.11",
+    "@monstrs/tools-runtime": "^0.2.14",
     "@types/node": "^20.2.5",
     "husky": "8.0.3",
     "typescript": "^5.1.6"
   },
-  "packageManager": "yarn@3.6.0",
+  "packageManager": "yarn@3.6.1",
   "tools": {
     "schematic": {
       "collection": "@monstrs/schematics",
