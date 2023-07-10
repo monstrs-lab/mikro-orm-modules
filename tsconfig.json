@@ -46,7 +46,8 @@
     "outDir": "./dist",
     "sourceMap": false,
     "strict": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "noImplicitOverride": true
   },
   "include": [
     "project.types.d.ts",
