@@ -58,26 +58,30 @@ export class MikroORMQueryBuilder<T extends object> {
       }
 
       if (Object.keys(queries).length === 1) {
-        this.qb.andWhere({
-          [field]: Object.keys(queries).reduce(
-            (result, key) => ({
-              ...result,
-              [key]: queries[key as keyof typeof queries],
-            }),
-            {}
-          ),
-        })
+        this.qb.andWhere(
+          set(
+            {},
+            field,
+            Object.keys(queries).reduce(
+              (result, key) => ({
+                ...result,
+                [key]: queries[key as keyof typeof queries],
+              }),
+              {}
+            )
+          )
+        )
       } else if (Object.keys(queries).length > 1) {
         const operator =
           (query.operator || Query.Operator.AND) === Query.Operator.AND ? '$and' : '$or'
 
-        this.qb.andWhere({
-          [field]: {
+        this.qb.andWhere(
+          set({}, field, {
             [operator]: Object.keys(queries).map((key) => ({
               [key]: queries[key as keyof typeof queries],
             })),
-          },
-        })
+          })
+        )
       }
     }
 
@@ -97,26 +101,30 @@ export class MikroORMQueryBuilder<T extends object> {
       }
 
       if (Object.keys(queries).length === 1) {
-        this.qb.andWhere({
-          [field]: Object.keys(queries).reduce(
-            (result, key) => ({
-              ...result,
-              [key]: queries[key as keyof typeof queries],
-            }),
-            {}
-          ),
-        })
+        this.qb.andWhere(
+          set(
+            {},
+            field,
+            Object.keys(queries).reduce(
+              (result, key) => ({
+                ...result,
+                [key]: queries[key as keyof typeof queries],
+              }),
+              {}
+            )
+          )
+        )
       } else if (Object.keys(queries).length > 1) {
         const operator =
           (query.operator || Query.Operator.AND) === Query.Operator.AND ? '$and' : '$or'
 
-        this.qb.andWhere({
-          [field]: {
+        this.qb.andWhere(
+          set({}, field, {
             [operator]: Object.keys(queries).map((key) => ({
               [key]: queries[key as keyof typeof queries],
             })),
-          },
-        })
+          })
+        )
       }
     }
 
@@ -140,26 +148,30 @@ export class MikroORMQueryBuilder<T extends object> {
       }
 
       if (Object.keys(queries).length === 1) {
-        this.qb.andWhere({
-          [field]: Object.keys(queries).reduce(
-            (result, key) => ({
-              ...result,
-              [key]: queries[key as keyof typeof queries],
-            }),
-            {}
-          ),
-        })
+        this.qb.andWhere(
+          set(
+            {},
+            field,
+            Object.keys(queries).reduce(
+              (result, key) => ({
+                ...result,
+                [key]: queries[key as keyof typeof queries],
+              }),
+              {}
+            )
+          )
+        )
       } else if (Object.keys(queries).length > 1) {
         const operator =
           (query.operator || Query.Operator.AND) === Query.Operator.AND ? '$and' : '$or'
 
-        this.qb.andWhere({
-          [field]: {
+        this.qb.andWhere(
+          set({}, field, {
             [operator]: Object.keys(queries).map((key) => ({
               [key]: queries[key as keyof typeof queries],
             })),
-          },
-        })
+          })
+        )
       }
     }
 
