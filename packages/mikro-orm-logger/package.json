@@ -17,12 +17,12 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@monstrs/logger": "^0.0.16"
+    "@monstrs/logger": "^0.0.18"
   },
   "devDependencies": {
-    "@jest/globals": "^29.5.0",
-    "@mikro-orm/core": "^5.6.1",
-    "@types/node": "^20.2.5"
+    "@jest/globals": "^29.7.0",
+    "@mikro-orm/core": "^5.8.0",
+    "@types/node": "^20.6.0"
   },
   "peerDependencies": {
     "@mikro-orm/core": "^5"
