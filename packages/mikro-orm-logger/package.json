@@ -17,7 +17,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@monstrs/logger": "^0.0.18"
+    "@monstrs/logger": "^0.0.19"
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
