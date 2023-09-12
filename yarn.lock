@@ -1023,9 +1023,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/logger@npm:^0.0.18":
-  version: 0.0.18
-  resolution: "@monstrs/logger@npm:0.0.18"
+"@monstrs/logger@npm:^0.0.19":
+  version: 0.0.19
+  resolution: "@monstrs/logger@npm:0.0.19"
   dependencies:
     "@opentelemetry/api": "npm:*"
     "@opentelemetry/api-logs": "npm:^0.42.0"
@@ -1033,7 +1033,7 @@ __metadata:
     "@opentelemetry/sdk-logs": "npm:^0.42.0"
     on-exit-leak-free: "npm:^2.1.0"
     sonic-boom: "npm:^3.3.0"
-  checksum: e546ac193f215e456fab07a4292f88c9b7659b7800991309d42d61ef576267291559ff1dfbc08a248994a10101f7f980b1dbd7bdc9c2cdba096fae9cbd81ea6a
+  checksum: ee09b5638765e76c2ebfdfd78c9f6b6cf9b32b04110d73449d9a3107a19f5543e4103a82d2db2899670c40218b8308ff1ca527391e0089f02ea0f971bdd7a463
   languageName: node
   linkType: hard
 
@@ -1043,7 +1043,7 @@ __metadata:
   dependencies:
     "@jest/globals": "npm:^29.7.0"
     "@mikro-orm/core": "npm:^5.8.0"
-    "@monstrs/logger": "npm:^0.0.18"
+    "@monstrs/logger": "npm:^0.0.19"
     "@types/node": "npm:^20.6.0"
   peerDependencies:
     "@mikro-orm/core": ^5
