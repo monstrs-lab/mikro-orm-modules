@@ -5,13 +5,16 @@
   "workspaces": [
     "packages/**/*"
   ],
+  "resolutions": {
+    "@types/lodash": "4.14.198"
+  },
   "devDependencies": {
-    "@monstrs/tools-runtime": "^0.2.15",
+    "@monstrs/tools-runtime": "^0.2.16",
     "@types/node": "^20.6.0",
     "husky": "8.0.3",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
-  "packageManager": "yarn@3.6.1",
+  "packageManager": "yarn@3.6.3",
   "tools": {
     "schematic": {
       "collection": "@monstrs/schematics",
