@@ -2,7 +2,7 @@ import type { Logger as ILogger }                from '@mikro-orm/core'
 import type { LoggerNamespace }                  from '@mikro-orm/core'
 import type { LogContext }                       from '@mikro-orm/core'
 import type { LoggerOptions }                    from '@mikro-orm/core'
-import type { Attributes }                       from '@monstrs/logger'
+import type { LogAttributes }                    from '@monstrs/logger'
 
 import { Logger }                                from '@monstrs/logger'
 
@@ -36,7 +36,7 @@ export class MikroORMLogger implements ILogger {
 
     const msg = message.replace(/\n/g, '').replace(/ +/g, ' ').trim()
 
-    const attributes: Attributes = {}
+    const attributes: LogAttributes = {}
 
     if (context?.query) {
       attributes[LOGGER_SQL_ATTRIBUTE_NAME] = context.query
