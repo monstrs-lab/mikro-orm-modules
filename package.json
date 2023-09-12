@@ -5,6 +5,9 @@
   "workspaces": [
     "packages/**/*"
   ],
+  "resolutions": {
+    "@types/lodash": "4.14.198"
+  },
   "devDependencies": {
     "@monstrs/tools-runtime": "^0.2.16",
     "@types/node": "^20.6.0",

@@ -1511,10 +1511,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:*":
-  version: 4.14.195
-  resolution: "@types/lodash@npm:4.14.195"
-  checksum: 6d733276df592614a0943a0053056140398b3c263cdf2557d4301b3a47b07ff561926cb9339a4725acbc7d8766f91ded218df11e0a4288cee369eafb5141d94d
+"@types/lodash@npm:4.14.198":
+  version: 4.14.198
+  resolution: "@types/lodash@npm:4.14.198"
+  checksum: 9523efda6eb78dc06bcc536c13396892695bc05147fef9f8e60db130d7be693a7a2eb48682b1dd30c0afa58617d5c79333d4bbe527a1c2474e4360282678c9cc
   languageName: node
   linkType: hard
 
