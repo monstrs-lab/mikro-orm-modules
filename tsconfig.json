@@ -47,7 +47,11 @@
     "sourceMap": false,
     "strict": true,
     "noImplicitAny": true,
-    "noImplicitOverride": true
+    "noImplicitOverride": true,
+    "skipLibCheck": true
   },
-  "include": ["project.types.d.ts", "packages/**/*"]
+  "include": [
+    "project.types.d.ts",
+    "packages/**/*"
+  ]
 }
