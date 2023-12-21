@@ -989,12 +989,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/config-jest@npm:0.3.12":
-  version: 0.3.12
-  resolution: "@monstrs/config-jest@npm:0.3.12"
+"@monstrs/config-jest@npm:0.3.13":
+  version: 0.3.13
+  resolution: "@monstrs/config-jest@npm:0.3.13"
   dependencies:
     "@emotion/jest": "npm:^11.11.0"
-    "@monstrs/config-typescript": "npm:0.3.6"
+    "@monstrs/config-typescript": "npm:0.3.7"
     "@monstrs/jest-resolver": "npm:0.3.3"
     jest-static-stubs: "npm:^0.0.1"
     ts-jest: "npm:^29.1.1"
@@ -1003,7 +1003,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: 9a3b1acc5c78d19685a3870447c9520f74306dda929dd7f40243fe73bef75a1413e72fa1dd631f34760040f00f33597902bbbf1fd06450b32dae58d31e84cf8e
+  checksum: 57f1a66292f674806d5f243db11b47dd991939a12f1ff9c1f505ca0cd367e4c0859920f1c5d8ea0107727c9f861985a6f8c6d920f0e3e8603aa767d2b05eac3a
   languageName: node
   linkType: hard
 
@@ -1016,10 +1016,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/config-typescript@npm:0.3.6":
-  version: 0.3.6
-  resolution: "@monstrs/config-typescript@npm:0.3.6"
-  checksum: 82f4549e5cb340a28034541d8212a929aeab6187f87d54443a734fd530a5ef13e75bd1b417ce9db0de1a791b3b8c92caf83aa451b2cab9dda4862826f77e1116
+"@monstrs/config-typescript@npm:0.3.7":
+  version: 0.3.7
+  resolution: "@monstrs/config-typescript@npm:0.3.7"
+  checksum: 6c2a5fbc841229e0b50c59399b5c52156dc9d32b5983f62ebf61a4bb6260d3815f535175ea822ab959ac6d7e31de6306037572be27001ad9c9c0415316fc55ac
   languageName: node
   linkType: hard
 
@@ -1082,13 +1082,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/tools-runtime@npm:^0.2.18":
-  version: 0.2.18
-  resolution: "@monstrs/tools-runtime@npm:0.2.18"
+"@monstrs/tools-runtime@npm:^0.2.19":
+  version: 0.2.19
+  resolution: "@monstrs/tools-runtime@npm:0.2.19"
   dependencies:
     "@jest/core": "npm:^29.7.0"
     "@monstrs/config-eslint": "npm:0.3.13"
-    "@monstrs/config-jest": "npm:0.3.12"
+    "@monstrs/config-jest": "npm:0.3.13"
     "@svgr/core": "npm:^8.1.0"
     "@svgr/plugin-jsx": "npm:^8.1.0"
     eslint: "npm:^8.56.0"
@@ -1096,7 +1096,7 @@ __metadata:
     ts-loader: "npm:^9.5.1"
     typescript: "npm:^5.3.3"
     webpack: "npm:^5.89.0"
-  checksum: 7cad662a2ad4df313c654bb9c24c8b17d0aee91af45c6ead6e50ea882bac3bf3cf0e1041ae4f1aa0f5a90737de74cd64036654341b2076e9c641fef1ae771acf
+  checksum: b0480676284fb772d108c090509fd6ec33fe4d23f82595a1aa7106ecffa799a90b1bbfbd9fe95a0a511ea26c0f54357e24557d2565443656491e94d65818033b
   languageName: node
   linkType: hard
 
@@ -5483,7 +5483,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mikro-orm-modules@workspace:."
   dependencies:
-    "@monstrs/tools-runtime": "npm:^0.2.18"
+    "@monstrs/tools-runtime": "npm:^0.2.19"
     "@types/node": "npm:^20.6.0"
     husky: "npm:8.0.3"
     typescript: "npm:^5.3.3"
