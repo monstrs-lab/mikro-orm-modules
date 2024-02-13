@@ -178,6 +178,49 @@ export class MikroORMQueryBuilder<T extends object> {
     return this
   }
 
+  number(field: string, query?: Query.NumberType): MikroORMQueryBuilder<T> {
+    if (field && query?.conditions && Object.keys(query.conditions).length > 0) {
+      const queries: { $eq?: number; $in?: Array<number> } = {}
+
+      if (query.conditions.eq) {
+        queries.$eq = query.conditions.eq.value
+      }
+
+      if (query.conditions.in) {
+        queries.$in = query.conditions.in.values
+      }
+
+      if (Object.keys(queries).length === 1) {
+        this.qb.andWhere(
+          set(
+            {},
+            field,
+            Object.keys(queries).reduce(
+              (result, key) => ({
+                ...result,
+                [key]: queries[key as keyof typeof queries],
+              }),
+              {}
+            )
+          )
+        )
+      } else if (Object.keys(queries).length > 1) {
+        const operator =
+          (query.operator || Query.Operator.AND) === Query.Operator.AND ? '$and' : '$or'
+
+        this.qb.andWhere(
+          set({}, field, {
+            [operator]: Object.keys(queries).map((key) => ({
+              [key]: queries[key as keyof typeof queries],
+            })),
+          })
+        )
+      }
+    }
+
+    return this
+  }
+
   async execute(): Promise<[Array<T>, boolean]> {
     const result = await this.qb.getResultList()
 
