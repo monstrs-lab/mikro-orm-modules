@@ -1,3 +1,0 @@
-releases:
-  "@monstrs/mikro-orm-logger": patch
-  "@monstrs/mikro-orm-query-builder": patch
