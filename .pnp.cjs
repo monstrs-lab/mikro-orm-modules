@@ -38,7 +38,6 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@monstrs/tools-runtime", "npm:0.2.19"],\
           ["@types/node", "npm:20.6.0"],\
-          ["husky", "npm:8.0.3"],\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
         "linkType": "SOFT"\
@@ -1360,59 +1359,17 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:1e06f026dc8d3cb348767f312ae9491473f9c2300c5793792996e2ce9d1b7e3e24eeb805f8d9db67b2ec98a835496512ca82cd478a518ee43ff082432ab98203#npm:5.8.0", {\
-        "packageLocation": "./.yarn/__virtual__/@mikro-orm-core-virtual-4d921a53c7/0/cache/@mikro-orm-core-npm-5.8.0-26badfec08-797005b213.zip/node_modules/@mikro-orm/core/",\
+      ["npm:6.1.3", {\
+        "packageLocation": "./.yarn/cache/@mikro-orm-core-npm-6.1.3-e231030180-146a0b3299.zip/node_modules/@mikro-orm/core/",\
         "packageDependencies": [\
-          ["@mikro-orm/core", "virtual:1e06f026dc8d3cb348767f312ae9491473f9c2300c5793792996e2ce9d1b7e3e24eeb805f8d9db67b2ec98a835496512ca82cd478a518ee43ff082432ab98203#npm:5.8.0"],\
-          ["@mikro-orm/better-sqlite", null],\
-          ["@mikro-orm/entity-generator", null],\
-          ["@mikro-orm/mariadb", null],\
-          ["@mikro-orm/migrations", null],\
-          ["@mikro-orm/migrations-mongodb", null],\
-          ["@mikro-orm/mongodb", null],\
-          ["@mikro-orm/mysql", null],\
-          ["@mikro-orm/postgresql", null],\
-          ["@mikro-orm/seeder", null],\
-          ["@mikro-orm/sqlite", null],\
-          ["@types/mikro-orm__better-sqlite", null],\
-          ["@types/mikro-orm__entity-generator", null],\
-          ["@types/mikro-orm__mariadb", null],\
-          ["@types/mikro-orm__migrations", null],\
-          ["@types/mikro-orm__migrations-mongodb", null],\
-          ["@types/mikro-orm__mongodb", null],\
-          ["@types/mikro-orm__mysql", null],\
-          ["@types/mikro-orm__postgresql", null],\
-          ["@types/mikro-orm__seeder", null],\
-          ["@types/mikro-orm__sqlite", null],\
-          ["acorn-loose", "npm:8.3.0"],\
-          ["acorn-walk", "npm:8.2.0"],\
-          ["dotenv", "npm:16.3.1"],\
-          ["fs-extra", "npm:11.1.1"],\
+          ["@mikro-orm/core", "npm:6.1.3"],\
+          ["dataloader", "npm:2.2.2"],\
+          ["dotenv", "npm:16.4.3"],\
+          ["esprima", "npm:4.0.1"],\
+          ["fs-extra", "npm:11.2.0"],\
           ["globby", "npm:11.1.0"],\
-          ["mikro-orm", "npm:5.8.0"],\
-          ["reflect-metadata", "npm:0.1.13"]\
-        ],\
-        "packagePeers": [\
-          "@mikro-orm/better-sqlite",\
-          "@mikro-orm/entity-generator",\
-          "@mikro-orm/mariadb",\
-          "@mikro-orm/migrations-mongodb",\
-          "@mikro-orm/migrations",\
-          "@mikro-orm/mongodb",\
-          "@mikro-orm/mysql",\
-          "@mikro-orm/postgresql",\
-          "@mikro-orm/seeder",\
-          "@mikro-orm/sqlite",\
-          "@types/mikro-orm__better-sqlite",\
-          "@types/mikro-orm__entity-generator",\
-          "@types/mikro-orm__mariadb",\
-          "@types/mikro-orm__migrations-mongodb",\
-          "@types/mikro-orm__migrations",\
-          "@types/mikro-orm__mongodb",\
-          "@types/mikro-orm__mysql",\
-          "@types/mikro-orm__postgresql",\
-          "@types/mikro-orm__seeder",\
-          "@types/mikro-orm__sqlite"\
+          ["mikro-orm", "npm:6.1.3"],\
+          ["reflect-metadata", "npm:0.2.1"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -1663,14 +1620,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@monstrs/logger", [\
-      ["npm:0.0.19", {\
-        "packageLocation": "./.yarn/cache/@monstrs-logger-npm-0.0.19-9504497d23-ee09b56387.zip/node_modules/@monstrs/logger/",\
+      ["npm:0.0.20", {\
+        "packageLocation": "./.yarn/cache/@monstrs-logger-npm-0.0.20-b8bf2cd0f1-327c9e03f6.zip/node_modules/@monstrs/logger/",\
         "packageDependencies": [\
-          ["@monstrs/logger", "npm:0.0.19"],\
+          ["@monstrs/logger", "npm:0.0.20"],\
           ["@opentelemetry/api", "npm:1.4.1"],\
           ["@opentelemetry/api-logs", "npm:0.42.0"],\
-          ["@opentelemetry/core", "virtual:9504497d23440de5944b99e30350e2a9f4d202544aec08be01ced3394037d7ec5d2f3ddac49ad130d9983774b196978b02874183fb58273f7bd85cceda7c7d1e#npm:1.16.0"],\
-          ["@opentelemetry/sdk-logs", "virtual:9504497d23440de5944b99e30350e2a9f4d202544aec08be01ced3394037d7ec5d2f3ddac49ad130d9983774b196978b02874183fb58273f7bd85cceda7c7d1e#npm:0.42.0"],\
+          ["@opentelemetry/core", "virtual:b8bf2cd0f18deb3fb35fe31928c887375eef5716188be39d1972a8e178093f0a44b341a0efa213517b116903f8278313a2dc62c28d2322003aedbdd7a4a51b5e#npm:1.16.0"],\
+          ["@opentelemetry/sdk-logs", "virtual:b8bf2cd0f18deb3fb35fe31928c887375eef5716188be39d1972a8e178093f0a44b341a0efa213517b116903f8278313a2dc62c28d2322003aedbdd7a4a51b5e#npm:0.42.0"],\
           ["on-exit-leak-free", "npm:2.1.0"],\
           ["sonic-boom", "npm:3.3.0"]\
         ],\
@@ -1683,9 +1640,9 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@monstrs/mikro-orm-logger", "workspace:packages/mikro-orm-logger"],\
           ["@jest/globals", "npm:29.7.0"],\
-          ["@mikro-orm/core", "virtual:1e06f026dc8d3cb348767f312ae9491473f9c2300c5793792996e2ce9d1b7e3e24eeb805f8d9db67b2ec98a835496512ca82cd478a518ee43ff082432ab98203#npm:5.8.0"],\
-          ["@monstrs/logger", "npm:0.0.19"],\
-          ["@types/node", "npm:20.6.0"]\
+          ["@mikro-orm/core", "npm:6.1.3"],\
+          ["@monstrs/logger", "npm:0.0.20"],\
+          ["@types/node", "npm:20.11.17"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1696,18 +1653,18 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@monstrs/mikro-orm-query-builder", "workspace:packages/mikro-orm-query-builder"],\
           ["@mikro-orm/postgresql", "virtual:5cfae4529409194069fc52ad28197c4a489dfc8905a39b70ac882ea652bbc44f005f1452bcb87d78ef1688c26c2ae204de93c73859dbbc42a63ceb33c4acc33d#npm:5.7.5"],\
-          ["@monstrs/query-types", "npm:0.0.7"],\
-          ["@types/lodash.set", "npm:4.3.7"],\
+          ["@monstrs/query-types", "npm:0.0.9"],\
+          ["@types/lodash.set", "npm:4.3.9"],\
           ["lodash.set", "npm:4.3.2"]\
         ],\
         "linkType": "SOFT"\
       }]\
     ]],\
     ["@monstrs/query-types", [\
-      ["npm:0.0.7", {\
-        "packageLocation": "./.yarn/cache/@monstrs-query-types-npm-0.0.7-b7c185ff11-f7934dfe50.zip/node_modules/@monstrs/query-types/",\
+      ["npm:0.0.9", {\
+        "packageLocation": "./.yarn/cache/@monstrs-query-types-npm-0.0.9-68f1f4fd3e-4ea59ae4a6.zip/node_modules/@monstrs/query-types/",\
         "packageDependencies": [\
-          ["@monstrs/query-types", "npm:0.0.7"]\
+          ["@monstrs/query-types", "npm:0.0.9"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1821,10 +1778,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:9504497d23440de5944b99e30350e2a9f4d202544aec08be01ced3394037d7ec5d2f3ddac49ad130d9983774b196978b02874183fb58273f7bd85cceda7c7d1e#npm:1.16.0", {\
-        "packageLocation": "./.yarn/__virtual__/@opentelemetry-core-virtual-f28adb2783/0/cache/@opentelemetry-core-npm-1.16.0-98d7bd7f0c-cf885fd17e.zip/node_modules/@opentelemetry/core/",\
+      ["virtual:b8bf2cd0f18deb3fb35fe31928c887375eef5716188be39d1972a8e178093f0a44b341a0efa213517b116903f8278313a2dc62c28d2322003aedbdd7a4a51b5e#npm:1.16.0", {\
+        "packageLocation": "./.yarn/__virtual__/@opentelemetry-core-virtual-388ae814d6/0/cache/@opentelemetry-core-npm-1.16.0-98d7bd7f0c-cf885fd17e.zip/node_modules/@opentelemetry/core/",\
         "packageDependencies": [\
-          ["@opentelemetry/core", "virtual:9504497d23440de5944b99e30350e2a9f4d202544aec08be01ced3394037d7ec5d2f3ddac49ad130d9983774b196978b02874183fb58273f7bd85cceda7c7d1e#npm:1.16.0"],\
+          ["@opentelemetry/core", "virtual:b8bf2cd0f18deb3fb35fe31928c887375eef5716188be39d1972a8e178093f0a44b341a0efa213517b116903f8278313a2dc62c28d2322003aedbdd7a4a51b5e#npm:1.16.0"],\
           ["@opentelemetry/api", "npm:1.4.1"],\
           ["@opentelemetry/semantic-conventions", "npm:1.16.0"],\
           ["@types/opentelemetry__api", null]\
@@ -1844,12 +1801,12 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:b36d0194edb177e991adfe32bbf633d206ecd0ad162fa3c4fc8c32308753d133fc61aa6158d544bdc9c76a32ef88526377e60bbcc7c363a7dc2e6eb69795a468#npm:1.16.0", {\
-        "packageLocation": "./.yarn/__virtual__/@opentelemetry-resources-virtual-9f76fcab16/0/cache/@opentelemetry-resources-npm-1.16.0-2e83b5e901-688c04159c.zip/node_modules/@opentelemetry/resources/",\
+      ["virtual:3c26a51dbb1b634e7c433aae891e1a9fe0d46c25b96a8c060e501efd0aee7dfe3a90d22c30c993d4be9920473f684e9a99ab00cc74e5af909678ac101e266b99#npm:1.16.0", {\
+        "packageLocation": "./.yarn/__virtual__/@opentelemetry-resources-virtual-d40e2b31f4/0/cache/@opentelemetry-resources-npm-1.16.0-2e83b5e901-688c04159c.zip/node_modules/@opentelemetry/resources/",\
         "packageDependencies": [\
-          ["@opentelemetry/resources", "virtual:b36d0194edb177e991adfe32bbf633d206ecd0ad162fa3c4fc8c32308753d133fc61aa6158d544bdc9c76a32ef88526377e60bbcc7c363a7dc2e6eb69795a468#npm:1.16.0"],\
+          ["@opentelemetry/resources", "virtual:3c26a51dbb1b634e7c433aae891e1a9fe0d46c25b96a8c060e501efd0aee7dfe3a90d22c30c993d4be9920473f684e9a99ab00cc74e5af909678ac101e266b99#npm:1.16.0"],\
           ["@opentelemetry/api", "npm:1.4.1"],\
-          ["@opentelemetry/core", "virtual:9504497d23440de5944b99e30350e2a9f4d202544aec08be01ced3394037d7ec5d2f3ddac49ad130d9983774b196978b02874183fb58273f7bd85cceda7c7d1e#npm:1.16.0"],\
+          ["@opentelemetry/core", "virtual:b8bf2cd0f18deb3fb35fe31928c887375eef5716188be39d1972a8e178093f0a44b341a0efa213517b116903f8278313a2dc62c28d2322003aedbdd7a4a51b5e#npm:1.16.0"],\
           ["@opentelemetry/semantic-conventions", "npm:1.16.0"],\
           ["@types/opentelemetry__api", null]\
         ],\
@@ -1868,14 +1825,14 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:9504497d23440de5944b99e30350e2a9f4d202544aec08be01ced3394037d7ec5d2f3ddac49ad130d9983774b196978b02874183fb58273f7bd85cceda7c7d1e#npm:0.42.0", {\
-        "packageLocation": "./.yarn/__virtual__/@opentelemetry-sdk-logs-virtual-b36d0194ed/0/cache/@opentelemetry-sdk-logs-npm-0.42.0-416bacafd8-2cf3dfec06.zip/node_modules/@opentelemetry/sdk-logs/",\
+      ["virtual:b8bf2cd0f18deb3fb35fe31928c887375eef5716188be39d1972a8e178093f0a44b341a0efa213517b116903f8278313a2dc62c28d2322003aedbdd7a4a51b5e#npm:0.42.0", {\
+        "packageLocation": "./.yarn/__virtual__/@opentelemetry-sdk-logs-virtual-3c26a51dbb/0/cache/@opentelemetry-sdk-logs-npm-0.42.0-416bacafd8-2cf3dfec06.zip/node_modules/@opentelemetry/sdk-logs/",\
         "packageDependencies": [\
-          ["@opentelemetry/sdk-logs", "virtual:9504497d23440de5944b99e30350e2a9f4d202544aec08be01ced3394037d7ec5d2f3ddac49ad130d9983774b196978b02874183fb58273f7bd85cceda7c7d1e#npm:0.42.0"],\
+          ["@opentelemetry/sdk-logs", "virtual:b8bf2cd0f18deb3fb35fe31928c887375eef5716188be39d1972a8e178093f0a44b341a0efa213517b116903f8278313a2dc62c28d2322003aedbdd7a4a51b5e#npm:0.42.0"],\
           ["@opentelemetry/api", "npm:1.4.1"],\
           ["@opentelemetry/api-logs", "npm:0.42.0"],\
-          ["@opentelemetry/core", "virtual:9504497d23440de5944b99e30350e2a9f4d202544aec08be01ced3394037d7ec5d2f3ddac49ad130d9983774b196978b02874183fb58273f7bd85cceda7c7d1e#npm:1.16.0"],\
-          ["@opentelemetry/resources", "virtual:b36d0194edb177e991adfe32bbf633d206ecd0ad162fa3c4fc8c32308753d133fc61aa6158d544bdc9c76a32ef88526377e60bbcc7c363a7dc2e6eb69795a468#npm:1.16.0"],\
+          ["@opentelemetry/core", "virtual:b8bf2cd0f18deb3fb35fe31928c887375eef5716188be39d1972a8e178093f0a44b341a0efa213517b116903f8278313a2dc62c28d2322003aedbdd7a4a51b5e#npm:1.16.0"],\
+          ["@opentelemetry/resources", "virtual:3c26a51dbb1b634e7c433aae891e1a9fe0d46c25b96a8c060e501efd0aee7dfe3a90d22c30c993d4be9920473f684e9a99ab00cc74e5af909678ac101e266b99#npm:1.16.0"],\
           ["@types/opentelemetry__api", null],\
           ["@types/opentelemetry__api-logs", null]\
         ],\
@@ -2357,16 +2314,24 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/lodash.set", [\
-      ["npm:4.3.7", {\
-        "packageLocation": "./.yarn/cache/@types-lodash.set-npm-4.3.7-82bc374ea5-ca498395ef.zip/node_modules/@types/lodash.set/",\
+      ["npm:4.3.9", {\
+        "packageLocation": "./.yarn/cache/@types-lodash.set-npm-4.3.9-1ff9a494be-d7f3c3da59.zip/node_modules/@types/lodash.set/",\
         "packageDependencies": [\
-          ["@types/lodash.set", "npm:4.3.7"],\
+          ["@types/lodash.set", "npm:4.3.9"],\
           ["@types/lodash", "npm:4.14.198"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@types/node", [\
+      ["npm:20.11.17", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-20.11.17-5185bfb3de-1f30dae80b.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:20.11.17"],\
+          ["undici-types", "npm:5.26.5"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:20.6.0", {\
         "packageLocation": "./.yarn/cache/@types-node-npm-20.6.0-73d5022935-0979a218f1.zip/node_modules/@types/node/",\
         "packageDependencies": [\
@@ -3850,6 +3815,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["dataloader", [\
+      ["npm:2.2.2", {\
+        "packageLocation": "./.yarn/cache/dataloader-npm-2.2.2-828252e61d-125ec69f82.zip/node_modules/dataloader/",\
+        "packageDependencies": [\
+          ["dataloader", "npm:2.2.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["debug", [\
       ["npm:3.2.7", {\
         "packageLocation": "./.yarn/cache/debug-npm-3.2.7-754e818c7a-37d96ae42c.zip/node_modules/debug/",\
@@ -4089,6 +4063,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/dotenv-npm-16.3.1-e6d380a398-b95ff1bbe6.zip/node_modules/dotenv/",\
         "packageDependencies": [\
           ["dotenv", "npm:16.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:16.4.3", {\
+        "packageLocation": "./.yarn/cache/dotenv-npm-16.4.3-b57a3b9116-c6a572b2da.zip/node_modules/dotenv/",\
+        "packageDependencies": [\
+          ["dotenv", "npm:16.4.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5111,6 +5092,16 @@ const RAW_RUNTIME_STATE =
           ["universalify", "npm:2.0.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:11.2.0", {\
+        "packageLocation": "./.yarn/cache/fs-extra-npm-11.2.0-6783080799-d77a9a9efe.zip/node_modules/fs-extra/",\
+        "packageDependencies": [\
+          ["fs-extra", "npm:11.2.0"],\
+          ["graceful-fs", "npm:4.2.11"],\
+          ["jsonfile", "npm:6.1.0"],\
+          ["universalify", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["fs-minipass", [\
@@ -5569,15 +5560,6 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["humanize-ms", "npm:1.2.1"],\
           ["ms", "npm:2.1.3"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["husky", [\
-      ["npm:8.0.3", {\
-        "packageLocation": "./.yarn/cache/husky-npm-8.0.3-b0b59c5127-6722591771.zip/node_modules/husky/",\
-        "packageDependencies": [\
-          ["husky", "npm:8.0.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7093,6 +7075,13 @@ const RAW_RUNTIME_STATE =
           ["mikro-orm", "npm:5.8.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:6.1.3", {\
+        "packageLocation": "./.yarn/cache/mikro-orm-npm-6.1.3-22edf629c5-3a24bbc194.zip/node_modules/mikro-orm/",\
+        "packageDependencies": [\
+          ["mikro-orm", "npm:6.1.3"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["mikro-orm-modules", [\
@@ -7102,7 +7091,6 @@ const RAW_RUNTIME_STATE =
           ["mikro-orm-modules", "workspace:."],\
           ["@monstrs/tools-runtime", "npm:0.2.19"],\
           ["@types/node", "npm:20.6.0"],\
-          ["husky", "npm:8.0.3"],\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
         "linkType": "SOFT"\
@@ -8099,6 +8087,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/reflect-metadata-npm-0.1.13-c525998e20-728bff0b37.zip/node_modules/reflect-metadata/",\
         "packageDependencies": [\
           ["reflect-metadata", "npm:0.1.13"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:0.2.1", {\
+        "packageLocation": "./.yarn/cache/reflect-metadata-npm-0.2.1-7f12b5924d-6ca3c674bb.zip/node_modules/reflect-metadata/",\
+        "packageDependencies": [\
+          ["reflect-metadata", "npm:0.2.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9195,6 +9190,15 @@ const RAW_RUNTIME_STATE =
           ["has-bigints", "npm:1.0.2"],\
           ["has-symbols", "npm:1.0.3"],\
           ["which-boxed-primitive", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["undici-types", [\
+      ["npm:5.26.5", {\
+        "packageLocation": "./.yarn/cache/undici-types-npm-5.26.5-de4f7c7bb9-bb673d7876.zip/node_modules/undici-types/",\
+        "packageDependencies": [\
+          ["undici-types", "npm:5.26.5"]\
         ],\
         "linkType": "HARD"\
       }]\
