@@ -9,11 +9,11 @@
     "@types/lodash": "4.14.198"
   },
   "devDependencies": {
-    "@monstrs/tools-runtime": "^0.2.19",
-    "@types/node": "^20.6.0",
-    "typescript": "^5.3.3"
+    "@monstrs/tools-runtime": "^0.2.21",
+    "@types/node": "^20.11.28",
+    "typescript": "^5.4.2"
   },
-  "packageManager": "yarn@4.0.2",
+  "packageManager": "yarn@4.1.1",
   "tools": {
     "schematic": {
       "collection": "@monstrs/schematics",
