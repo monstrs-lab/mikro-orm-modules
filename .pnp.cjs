@@ -2345,7 +2345,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@monstrs/mikro-orm-query-builder", "workspace:packages/mikro-orm-query-builder"],\
           ["@mikro-orm/postgresql", "virtual:5cfae4529409194069fc52ad28197c4a489dfc8905a39b70ac882ea652bbc44f005f1452bcb87d78ef1688c26c2ae204de93c73859dbbc42a63ceb33c4acc33d#npm:5.7.5"],\
-          ["@monstrs/query-types", "npm:0.0.10"],\
+          ["@monstrs/query-types", "npm:0.0.12"],\
           ["@types/lodash.set", "npm:4.3.9"],\
           ["lodash.set", "npm:4.3.2"]\
         ],\
@@ -2353,10 +2353,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@monstrs/query-types", [\
-      ["npm:0.0.10", {\
-        "packageLocation": "../.yarn/berry/cache/@monstrs-query-types-npm-0.0.10-591e3b984e-10c0.zip/node_modules/@monstrs/query-types/",\
+      ["npm:0.0.12", {\
+        "packageLocation": "../.yarn/berry/cache/@monstrs-query-types-npm-0.0.12-79b9ad2856-10c0.zip/node_modules/@monstrs/query-types/",\
         "packageDependencies": [\
-          ["@monstrs/query-types", "npm:0.0.10"]\
+          ["@monstrs/query-types", "npm:0.0.12"]\
         ],\
         "linkType": "HARD"\
       }]\
