@@ -90,7 +90,7 @@ export class MikroORMQueryBuilder<T extends object> {
 
   date(field: string, query?: Query.DateType): MikroORMQueryBuilder<T> {
     if (field && query?.conditions && Object.keys(query.conditions).length > 0) {
-      const queries: { $eq?: Date; $exists?: boolean } = {}
+      const queries: { $eq?: Date; $exists?: boolean; $lt?: Date; $gt?: Date } = {}
 
       if (query.conditions.eq) {
         queries.$eq = query.conditions.eq.value
@@ -98,6 +98,10 @@ export class MikroORMQueryBuilder<T extends object> {
 
       if (query.conditions.exists) {
         queries.$exists = query.conditions.exists.value
+      }
+
+      if (query.conditions.lt) {
+        queries.$lt = query.conditions.lt.value
       }
 
       if (Object.keys(queries).length === 1) {

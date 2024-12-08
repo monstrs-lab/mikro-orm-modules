@@ -1710,7 +1710,7 @@ __metadata:
   resolution: "@monstrs/mikro-orm-query-builder@workspace:packages/mikro-orm-query-builder"
   dependencies:
     "@mikro-orm/postgresql": "npm:*"
-    "@monstrs/query-types": "npm:^0.0.10"
+    "@monstrs/query-types": "npm:^0.0.12"
     "@types/lodash.set": "npm:^4.3.9"
     lodash.set: "npm:^4.3.2"
   peerDependencies:
@@ -1721,10 +1721,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/query-types@npm:^0.0.10":
-  version: 0.0.10
-  resolution: "@monstrs/query-types@npm:0.0.10"
-  checksum: 10c0/9233bc8ee8c9d48d2e617c8d70546e25136800d0e2ce67ee0ceb86bdc6ba2c7315e273abcd27c487f97d5a63a29e2443c86a9379908dc18ceaffd73e72c10c64
+"@monstrs/query-types@npm:^0.0.12":
+  version: 0.0.12
+  resolution: "@monstrs/query-types@npm:0.0.12"
+  checksum: 10c0/2cc84a010c88fdf871f385f56b7bba92685bfb6fa9b8ee678de173919d971b01667231c16426372234c85f4cb4a970a0c0a41abe4ef2ac2447cffd344701b245
   languageName: node
   linkType: hard
 
