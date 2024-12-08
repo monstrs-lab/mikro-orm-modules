@@ -104,6 +104,10 @@ export class MikroORMQueryBuilder<T extends object> {
         queries.$lt = query.conditions.lt.value
       }
 
+      if (query.conditions.gt) {
+        queries.$gt = query.conditions.gt.value
+      }
+
       if (Object.keys(queries).length === 1) {
         this.qb.andWhere(
           set(
